@@ -15,7 +15,7 @@ import { Button, TextField } from '@mui/material'
 import { DatePicker } from '@mui/x-date-pickers'
 import dayjs, { Dayjs } from 'dayjs'
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
-import { addInfo, clearInfo } from '@/redux/slices'
+import { addInfo } from '@/redux/slices'
 
 interface Info {
   date: string;
@@ -27,7 +27,6 @@ interface Info {
 
 export const Sum = () => {
     const [ isClicked, setIsClicked ] = useState<boolean>(false)
-    const [ distance, setDistance ] = useState<number | null>(null)
     const [ price, setPrice ] = useState<number | null>(null)
     const [open, setOpen] = useState<boolean>(false)
     const [info, setInfo] = useState<Info>({date: '', addressFrom: "", phoneFrom: "", addressTo: "", phoneTo: ""})
@@ -54,7 +53,6 @@ export const Sum = () => {
             const distance = await getDistanceByAir(info.cityFrom, info.cityTo);
             console.log(distance)
             const km = Math.round(distance)
-            setDistance(km);
             const price = await getPrice(km, packageInfo)
             setPrice(price)
             setIsClicked(true);

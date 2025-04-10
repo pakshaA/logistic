@@ -11,8 +11,8 @@ interface PackageState {
   }
 
 export const getPrice = async (distance: number, packageInfo: PackageState) => {
-    let p = packageInfo
-    let d = distance
+    const p = packageInfo
+    const d = distance
     const PRICE_PER_KM = 0.4
     const PRICE_PER_KM_GOODS = 0.6
     const prices: Record<string, number> = {

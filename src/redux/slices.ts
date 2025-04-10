@@ -31,9 +31,7 @@ interface InfoItem {
   phoneTo: string;
 }
 
-interface infoState extends Array<InfoItem> {}
-
-const initialInfoState: infoState = [];
+const initialInfoState: Array<InfoItem> = [];
 
 const initialState: CityState = {
   departure: { name: '', id: 0 },
@@ -94,7 +92,7 @@ export const infoSlice = createSlice({
     addInfo: (state, action: PayloadAction<InfoItem>) => {
       state.push(action.payload);
     },
-    clearInfo: (state) => {
+    clearInfo: () => {
       return [];
     },
     removeInfo: (state, action: PayloadAction<number>) => {

@@ -2,7 +2,6 @@
 import { Search } from "./searchInput/search"
 import Style from './calc.module.scss'
 import data from '../../../helpers/filtered_cities.json'
-import { useState } from "react"
 import { PackageSelect } from "./boxDropDown/box"
 
 export const Calculator = () => {

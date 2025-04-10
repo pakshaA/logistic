@@ -16,12 +16,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useDispatch } from 'react-redux';
 import { setPackage, setPackageClear } from '@/redux/slices';
 
-interface PresetPackage {
-  id: string;
-  label: string;
-  size: string;
-  weight: string;
-}
 
 const presetPackages = [
   {
