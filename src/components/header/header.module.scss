@@ -1,0 +1,15 @@
+.header {
+    padding: 10px 0;
+    margin-bottom: 20px;
+
+    .headerWrapper { 
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}

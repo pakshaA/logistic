@@ -1,0 +1,16 @@
+.wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+
+    .wrapper_chekbox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .wrapper_select {
+        width: 300px;
+    }
+}
