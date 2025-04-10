@@ -8,7 +8,7 @@ import {
   MenuItem,
   Box
 } from '@mui/material';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setTypeOfGoods, clearTypeOfGoods } from '@/redux/slices';
 
 interface ProductType {
